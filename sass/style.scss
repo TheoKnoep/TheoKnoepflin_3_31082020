@@ -1,3 +1,11 @@
+$colortxt: #000; 
+$colorbg: #fff;
+
+
 body {
-	background: black; 
+	background: $colorbg; 
+}
+
+p {
+	color: $colortxt; 
 }
