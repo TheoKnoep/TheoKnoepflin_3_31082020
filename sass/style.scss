@@ -1,41 +1,7 @@
-$colortxt: #000; 
-$colorbg: #fff;
-
-@mixin %typography {
-	font-size: 1.2em; 
-	line-height: 1.4; 
-	font-family: 'Lora'; 
-	color: $colortxt; 
-}
-
-@mixin %boxdecoration {
-	border: solid 2px black; 
-	box-shadow: 2px 2px black; 
-}
+$colorprimary: #9356DC; 
+$colorsecondary: #FF79DA; 
+$colortertiary: #99E2D0; 
 
 body {
-	background: $colorbg; 
-}
-
-p {
-	@include %typography; //on étend le sélecteur typography à p
-}
-
-textarea {
-	@include %typography; 
-}
-.searchbox {
-	input {
-		@include %typography; 
-	}
-}
-
-.btn {
-	@include %boxdecoration; 
-}
-.cta {
-	@include %boxdecoration; 
-}
-.encadre {
-	@include %boxdecoration; 
+	background-color: $colorprimary; 
 }
