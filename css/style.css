@@ -68,7 +68,7 @@ HOMEPAGE
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
 }
 .restaurant__img-container {
-  max-height: 200px;
+  max-height: 140px;
   overflow: hidden;
   display: flex;
   justify-content: center;
