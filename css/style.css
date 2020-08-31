@@ -4,21 +4,44 @@
   font-family: "Roboto", sans-serif;
 }
 
-.disclaimer {
-  font-family: "Shrikhand", cursive;
+/* HEADER -------------------------------------------------------- */
+.header {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1em 0 0.6em 0;
+}
+.header__logo-container {
   display: flex;
   justify-content: center;
-  height: 100vh;
 }
-.disclaimer--content {
-  margin: auto;
+
+/* FOOTER ------------------------------------------------- */
+.footer {
+  background: #353535;
   color: white;
-  font-style: italic;
-  font-size: 1.4em;
-  padding: 2em 3em;
-  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
-  background: #FF79DA;
-  border-radius: 25px;
 }
+.footer__link-list {
+  padding: 1em;
+  list-style: none;
+}
+.footer__link-list li {
+  margin: 0.4em 0;
+}
+.footer__link-list i {
+  width: 28px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+}
+
+/*  ===========================================
+HOMEPAGE 
+=========================================== */
+/*  ===========================================
+MENU  
+=========================================== */
 
 /*# sourceMappingURL=style.css.map */
