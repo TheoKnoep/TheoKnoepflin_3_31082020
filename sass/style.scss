@@ -104,6 +104,7 @@ HOMEPAGE
 	border-radius: 15px; 
 	max-width: 380px; 
 	margin: 1em auto; 
+	position: relative; 
 	@include main-box-shadow; 
 	&__img-container {
 		max-height: 140px; 
@@ -118,8 +119,15 @@ HOMEPAGE
 	}
 	&__new-label {
 		position: absolute; 
-		top: 0; 
-		right: 0; 
+		top: 12px; 
+		right: 12px;
+		background-color: rgb(153, 226, 208, 0.9);
+		color: rgb(19, 146, 115); 
+		font-weight: bold;
+		font-size: 0.85em; 
+		padding: 0.4em 1em; 
+		border-radius: 3px; 
+		@include main-box-shadow;   
 	}
 	&__bottom {
 		padding: 1em; 
