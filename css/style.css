@@ -1,41 +1,17 @@
-body {
-  background: #fff;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 4 | @mixin %typography {
+ *   |        ^
+ *   '
+ *   sass\style.scss 4:8  root stylesheet */
 
-p {
-  font-size: 1.2em;
-  line-height: 1.4;
-  font-family: "Lora";
-  color: #000;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 4 \2502  @mixin %typography {\d\a   \2502         ^\a   \2575 \a   sass\\style.scss 4:8  root stylesheet";
 }
-
-textarea {
-  font-size: 1.2em;
-  line-height: 1.4;
-  font-family: "Lora";
-  color: #000;
-}
-
-.searchbox input {
-  font-size: 1.2em;
-  line-height: 1.4;
-  font-family: "Lora";
-  color: #000;
-}
-
-.btn {
-  border: solid 2px black;
-  box-shadow: 2px 2px black;
-}
-
-.cta {
-  border: solid 2px black;
-  box-shadow: 2px 2px black;
-}
-
-.encadre {
-  border: solid 2px black;
-  box-shadow: 2px 2px black;
-}
-
-/*# sourceMappingURL=style.css.map */
