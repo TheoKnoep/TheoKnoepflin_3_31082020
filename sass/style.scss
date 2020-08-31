@@ -2,11 +2,25 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA; 
 $tertiary-color: #99E2D0; 
 $footer-bg-color: #353535; 
+$soft-gray-bg: #F2F2F2; 
 
 
 @mixin logo-font {
 	font-family: 'Shrikhand', cursive;
 }
+
+@mixin main-box-shadow {
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+}
+
+@mixin gray-bg {
+	background-color: $soft-gray-bg; 
+}
+@mixin grayer-bg {
+	background-color: darken($soft-gray-bg, 10%); 
+}
+
+
 
 
 
@@ -60,7 +74,63 @@ $footer-bg-color: #353535;
 /*  ===========================================
 HOMEPAGE 
 =========================================== */
+.usp {
+	@include gray-bg; 
+}
 
+.localisation {
+	@include grayer-bg; 
+	text-align: center; 
+}
+
+.steps {
+	li {
+		i {
+			width: 28px; 
+			text-align: center; 
+		}
+	}
+}
+
+
+.restaurants-container {
+	padding: 2%; 
+	margin: auto; 
+	@include gray-bg; 
+}
+
+.restaurant {
+	overflow: hidden; 
+	border-radius: 15px; 
+	max-width: 380px; 
+	margin: 1em auto; 
+	@include main-box-shadow; 
+	&__img-container {
+		max-height: 200px; 
+		overflow: hidden;
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		img {
+			width: 100%; 
+			height: auto; 
+		}
+	}
+	&__new-label {
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+	}
+	&__bottom {
+		padding: 1em; 
+		display: flex; 
+		justify-content: space-between; 
+		align-items: center; 
+	}
+	&__fav {
+		cursor: pointer;
+	}
+}
 
 
 /*  ===========================================
