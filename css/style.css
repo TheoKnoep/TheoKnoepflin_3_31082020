@@ -1,5 +1,17 @@
-body {
-  background-color: #9356DC;
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.disclaimer--content {
+  margin: auto;
+  color: white;
+  font-style: italic;
+  font-size: 1.4em;
+  padding: 2em 3em;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  background: #FF79DA;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

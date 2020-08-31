@@ -2,6 +2,20 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA; 
 $tertiary-color: #99E2D0; 
 
-body {
-	background-color: $primary-color; 
+
+
+.disclaimer {
+	display: flex; 
+	justify-content: center; 
+	height: 100vh; 
+	&--content {
+		margin: auto; 
+		color: white;  
+		font-style: italic; 
+		font-size: 1.4em; 
+		padding: 2em 3em; 
+		box-shadow: 2px 3px 12px rgba(0,0,0,0.2); 
+		background: $secondary-color; 
+		border-radius: 25px; 
+	}
 }
