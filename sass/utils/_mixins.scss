@@ -1,0 +1,38 @@
+
+
+@mixin page {
+	max-width: 720px; 
+	margin: auto; 
+	width: 95%; 
+}
+
+@mixin logo-font {
+	font-family: 'Shrikhand', cursive;
+}
+
+@mixin main-box-shadow($opacity) {
+	box-shadow: 1px 3px 12px rgba(0,0,0,$opacity);
+}
+
+@mixin gray-bg {
+	background-color: $soft-gray-bg; 
+}
+@mixin grayer-bg {
+	background-color: darken($soft-gray-bg, 10%); 
+}
+
+@mixin btn {
+	color: white; 
+	text-decoration: none; 
+	border-radius: 500px; 
+	padding: 1em 2em; 
+	margin: 2em 0; 
+	background: linear-gradient($secondary-color, $primary-color); 
+	font-weight: bold; 
+	transition: all ease 300ms; 
+	@include main-box-shadow(0.2); 
+	&:hover {
+		background: linear-gradient(lighten($secondary-color, 10%), lighten($primary-color, 10%)); 
+		@include main-box-shadow(0.4); 
+	}
+}

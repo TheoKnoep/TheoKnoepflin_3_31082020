@@ -1,0 +1,10 @@
+.header {
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+	position: relative;
+	z-index: 2; 
+	padding: 1em 0 0.6em 0; 
+	&__logo-container {
+		display: flex; 
+		justify-content: center;
+	}
+}

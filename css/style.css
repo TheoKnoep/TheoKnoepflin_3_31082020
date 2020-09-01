@@ -10,7 +10,6 @@
   scroll-behavior: smooth;
 }
 
-/* HEADER -------------------------------------------------------- */
 .header {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -22,7 +21,6 @@
   justify-content: center;
 }
 
-/* FOOTER ------------------------------------------------- */
 .footer {
   background: #353535;
   color: white;
@@ -48,9 +46,6 @@
   font-family: "Shrikhand", cursive;
 }
 
-/*  ===========================================
-HOMEPAGE 
-=========================================== */
 .usp {
   background-color: #F7F7F7;
   padding: 0 0 1.2em 0;
@@ -197,11 +192,12 @@ HOMEPAGE
   align-items: center;
 }
 .restaurant__fav {
-  cursor: pointer;
+  font-size: 200%;
+  color: #9356DC;
+  transition: color ease 650ms;
 }
-
-/*  ===========================================
-MENU  
-=========================================== */
+.restaurant__fav:hover {
+  color: #FF79DA;
+}
 
 /*# sourceMappingURL=style.css.map */
