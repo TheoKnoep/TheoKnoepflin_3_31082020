@@ -51,7 +51,7 @@
 HOMEPAGE 
 =========================================== */
 .usp {
-  background-color: #F2F2F2;
+  background-color: #F7F7F7;
   padding: 0 0 1.2em 0;
   text-align: center;
 }
@@ -61,7 +61,7 @@ HOMEPAGE
 
 .localisation {
   padding: 0.8em;
-  background-color: #d9d9d9;
+  background-color: #dedede;
 }
 
 .accroche {
@@ -104,7 +104,7 @@ HOMEPAGE
   counter-reset: etape;
 }
 .steps ol li {
-  background: #F2F2F2;
+  background: #F7F7F7;
   border-radius: 15px;
   width: 85%;
   margin: 1em auto 1em 5%;
@@ -142,7 +142,7 @@ HOMEPAGE
 .restaurants-container {
   padding: 2%;
   margin: auto;
-  background-color: #F2F2F2;
+  background-color: #F7F7F7;
 }
 .restaurants-container a {
   text-decoration: none;
