@@ -28,6 +28,10 @@
 
 .steps {
 	@include page; 
+	h2 {
+		width: 95%; 
+		margin: auto; 
+	}
 	ol {
 		list-style: none; 
 		max-width: 380px; 
