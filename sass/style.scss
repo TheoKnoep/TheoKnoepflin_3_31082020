@@ -20,6 +20,16 @@ $soft-gray-bg: #F2F2F2;
 	background-color: darken($soft-gray-bg, 10%); 
 }
 
+@mixin btn {
+	color: white; 
+	text-decoration: none; 
+	border-radius: 500px; 
+	padding: 1em 2em; 
+	margin: 2em; 
+	background: linear-gradient($primary-color, $secondary-color); 
+	font-weight: bold; 
+}
+
 
 
 
@@ -33,6 +43,8 @@ $soft-gray-bg: #F2F2F2;
 /* HEADER -------------------------------------------------------- */
 .header {
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+	position: relative;
+	z-index: 2; 
 	padding: 1em 0 0.6em 0; 
 	&__logo-container {
 		display: flex; 
@@ -76,11 +88,22 @@ HOMEPAGE
 =========================================== */
 .usp {
 	@include gray-bg; 
+	text-align: center; 
 }
 
 .localisation {
+	padding: 0.8em; 
 	@include grayer-bg; 
-	text-align: center; 
+}
+
+.accroche {
+	&__cta {
+		height: 4em; 
+		margin: 2em; 
+		a {
+			@include btn; 
+		}
+	}
 }
 
 .steps {
