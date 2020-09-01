@@ -36,12 +36,16 @@ $soft-gray-bg: #F2F2F2;
 	transition: all ease 300ms; 
 	@include main-box-shadow(0.2); 
 	&:hover {
-		background: linear-gradient(lighten($primary-color, 10%), lighten($secondary-color, 10%)); 
+		background: linear-gradient(lighten($secondary-color, 10%), lighten($primary-color, 10%)); 
 		@include main-box-shadow(0.4); 
 	}
 }
 
 
+::selection {
+	color: white; 
+	background: $primary-color; 
+}
 
 
 
@@ -72,6 +76,7 @@ $soft-gray-bg: #F2F2F2;
 	background: $footer-bg-color; 
 	color: white; 
 	&__link-list {
+		@include page; 
 		padding: 1em; 
 		list-style: none; 
 		li {
@@ -126,10 +131,46 @@ HOMEPAGE
 }
 
 .steps {
-	li {
-		i {
-			width: 28px; 
-			text-align: center; 
+	@include page; 
+	ol {
+		list-style: none; 
+		max-width: 380px; 
+		margin: auto; 
+		counter-reset: etape; 
+		li {
+			background: $soft-gray-bg; 
+			border-radius: 15px; 
+			width: 85%; 
+			margin: 1em auto 1em 5%;  
+			padding: 1em 0 1em 2em; 
+			position: relative; 
+			counter-increment: etape; 
+			transition: all ease 1s; 
+			@include main-box-shadow(0.2); 
+			&::before {
+				content: counter(etape);  
+				color: white; 
+				background: $primary-color; 
+				border-radius: 50%; 
+				width: 24px; 
+				height: 24px; 
+				display: flex; 
+				justify-content: center;
+				align-items: center;
+				position: absolute; 
+				left: -12px; 
+			}
+			&:hover {
+				background: lighten($primary-color, 30%); 
+			}
+			&:hover  i {
+				 color: $primary-color; 
+			}
+			i {
+				width: 28px; 
+				text-align: center; 
+				transition: all ease 400ms; 
+			}
 		}
 	}
 }
@@ -138,7 +179,11 @@ HOMEPAGE
 .restaurants-container {
 	padding: 2%; 
 	margin: auto; 
-	@include gray-bg; 
+	@include gray-bg;  
+	a {
+		text-decoration: none; 
+		color: inherit; 
+	}
 }
 
 .restaurant {
@@ -148,6 +193,13 @@ HOMEPAGE
 	margin: 1em auto; 
 	position: relative; 
 	@include main-box-shadow (0.2); 
+	transition: all ease 460ms; 
+	&:hover {
+		@include main-box-shadow(0.4); 
+	}
+	&__heading {
+		@include page; 
+	}
 	&__img-container {
 		max-height: 140px; 
 		overflow: hidden;

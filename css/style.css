@@ -1,3 +1,8 @@
+::selection {
+  color: white;
+  background: #9356DC;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +27,9 @@
   color: white;
 }
 .footer__link-list {
+  max-width: 720px;
+  margin: auto;
+  width: 95%;
   padding: 1em;
   list-style: none;
 }
@@ -80,19 +88,65 @@ HOMEPAGE
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
 .accroche__cta a:hover {
-  background: linear-gradient(#ae80e5, #fface8);
+  background: linear-gradient(#fface8, #ae80e5);
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
 
-.steps li i {
+.steps {
+  max-width: 720px;
+  margin: auto;
+  width: 95%;
+}
+.steps ol {
+  list-style: none;
+  max-width: 380px;
+  margin: auto;
+  counter-reset: etape;
+}
+.steps ol li {
+  background: #F2F2F2;
+  border-radius: 15px;
+  width: 85%;
+  margin: 1em auto 1em 5%;
+  padding: 1em 0 1em 2em;
+  position: relative;
+  counter-increment: etape;
+  transition: all ease 1s;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+}
+.steps ol li::before {
+  content: counter(etape);
+  color: white;
+  background: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -12px;
+}
+.steps ol li:hover {
+  background: #e4d5f6;
+}
+.steps ol li:hover i {
+  color: #9356DC;
+}
+.steps ol li i {
   width: 28px;
   text-align: center;
+  transition: all ease 400ms;
 }
 
 .restaurants-container {
   padding: 2%;
   margin: auto;
   background-color: #F2F2F2;
+}
+.restaurants-container a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .restaurant {
@@ -102,6 +156,15 @@ HOMEPAGE
   margin: 1em auto;
   position: relative;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 460ms;
+}
+.restaurant:hover {
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
+}
+.restaurant__heading {
+  max-width: 720px;
+  margin: auto;
+  width: 95%;
 }
 .restaurant__img-container {
   max-height: 140px;
