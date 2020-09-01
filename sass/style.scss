@@ -4,13 +4,18 @@ $tertiary-color: #99E2D0;
 $footer-bg-color: #353535; 
 $soft-gray-bg: #F2F2F2; 
 
+@mixin page {
+	max-width: 720px; 
+	margin: auto; 
+	width: 95%; 
+}
 
 @mixin logo-font {
 	font-family: 'Shrikhand', cursive;
 }
 
-@mixin main-box-shadow {
-	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+@mixin main-box-shadow($opacity) {
+	box-shadow: 1px 3px 12px rgba(0,0,0,$opacity);
 }
 
 @mixin gray-bg {
@@ -25,9 +30,15 @@ $soft-gray-bg: #F2F2F2;
 	text-decoration: none; 
 	border-radius: 500px; 
 	padding: 1em 2em; 
-	margin: 2em; 
-	background: linear-gradient($primary-color, $secondary-color); 
+	margin: 2em 0; 
+	background: linear-gradient($secondary-color, $primary-color); 
 	font-weight: bold; 
+	transition: all ease 300ms; 
+	@include main-box-shadow(0.2); 
+	&:hover {
+		background: linear-gradient(lighten($primary-color, 10%), lighten($secondary-color, 10%)); 
+		@include main-box-shadow(0.4); 
+	}
 }
 
 
@@ -88,7 +99,11 @@ HOMEPAGE
 =========================================== */
 .usp {
 	@include gray-bg; 
+	padding: 0 0 1.2em 0; 
 	text-align: center; 
+	.heading {
+		margin: 1em 0 2em 0; 
+	}
 }
 
 .localisation {
@@ -97,9 +112,13 @@ HOMEPAGE
 }
 
 .accroche {
+	@include page; 
 	&__cta {
 		height: 4em; 
-		margin: 2em; 
+		margin: 2em 0; 
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
 		a {
 			@include btn; 
 		}
@@ -128,7 +147,7 @@ HOMEPAGE
 	max-width: 380px; 
 	margin: 1em auto; 
 	position: relative; 
-	@include main-box-shadow; 
+	@include main-box-shadow (0.2); 
 	&__img-container {
 		max-height: 140px; 
 		overflow: hidden;
@@ -150,7 +169,7 @@ HOMEPAGE
 		font-size: 0.85em; 
 		padding: 0.4em 1em; 
 		border-radius: 3px; 
-		@include main-box-shadow;   
+		@include main-box-shadow(0.2);   
 	}
 	&__bottom {
 		padding: 1em; 
