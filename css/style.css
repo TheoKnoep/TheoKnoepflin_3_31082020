@@ -79,10 +79,11 @@
   background: linear-gradient(#FF79DA, #9356DC);
   font-weight: bold;
   transition: all ease 300ms;
+  opacity: 1;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
 .accroche__cta a:hover {
-  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0.7;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
 
