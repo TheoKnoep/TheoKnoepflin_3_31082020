@@ -159,6 +159,19 @@
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
 
+.back-btn {
+  position: absolute;
+  left: 12px;
+  font-size: 1.8rem;
+  transition: all ease 450ms;
+}
+.back-btn:hover {
+  left: 6px;
+}
+.back-btn a {
+  color: black;
+}
+
 .header {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;

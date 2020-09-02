@@ -1,0 +1,13 @@
+.back-btn {
+	position: absolute; 
+	left: 12px;  
+	font-size: 1.8rem; 
+	transition: all ease 450ms; 
+	&:hover {
+		left:6px; 
+	}
+	a {
+		color: black; 
+	}
+
+}
