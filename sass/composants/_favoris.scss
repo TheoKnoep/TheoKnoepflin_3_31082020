@@ -1,8 +1,30 @@
 .add-favorite {
 	font-size: 200%; 
+	text-align: center; 
+	width: 40px; 
+	height: 40px; 
 	color: $primary-color; 
-	transition: color ease 650ms; 
-	&:hover {
-		color: $secondary-color; 
+	transition: all ease 650ms; 
+	overflow: hidden; 
+	mask-image: url('heart-bis.png'); 
+	mask-size: 40px 40px; 
+	-webkit-mask-image: url('heart-bis.png'); 
+	-webkit-mask-size: 40px 40px; 
+
+	&::after {
+		content: ''; 
+		display:block; 
+		width: 48px; 
+		height: 48px; 
+		border-radius: 50%; 
+		background: linear-gradient($secondary-color, $primary-color); 
+		position: absolute; 
+		transition: all ease 450ms; 
+		transform: translate(-4px, 10px); 
 	}
+	&:hover {
+		&::after {
+			transform: translate(-4px, -48px); 
+		}
+	} 
 }

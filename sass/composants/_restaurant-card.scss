@@ -8,7 +8,6 @@
 	transition: all ease 460ms; 
 	&:hover {
 		@include main-box-shadow(0.4); 
-		transform: translatey(-6px) translateX(4px); 
 	}
 	&__heading {
 		@include page; 
