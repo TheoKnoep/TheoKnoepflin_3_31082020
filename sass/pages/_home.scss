@@ -26,54 +26,7 @@
 	}
 }
 
-.steps {
-	@include page; 
-	h2 {
-		width: 95%; 
-		margin: auto; 
-	}
-	ol {
-		list-style: none; 
-		max-width: 380px; 
-		margin: auto; 
-		counter-reset: etape; 
-		li {
-			background: $soft-gray-bg; 
-			border-radius: 15px; 
-			width: 85%; 
-			margin: 1em auto 1em 5%;  
-			padding: 1em 0 1em 2em; 
-			position: relative; 
-			counter-increment: etape; 
-			transition: all ease 1s; 
-			@include main-box-shadow(0.2); 
-			&::before {
-				content: counter(etape);  
-				color: white; 
-				background: $primary-color; 
-				border-radius: 50%; 
-				width: 24px; 
-				height: 24px; 
-				display: flex; 
-				justify-content: center;
-				align-items: center;
-				position: absolute; 
-				left: -12px; 
-			}
-			&:hover {
-				background: lighten($primary-color, 30%); 
-			}
-			&:hover  i {
-				 color: $primary-color; 
-			}
-			i {
-				width: 28px; 
-				text-align: center; 
-				transition: all ease 400ms; 
-			}
-		}
-	}
-}
+
 
 
 .restaurants-container {
@@ -83,59 +36,6 @@
 	a {
 		text-decoration: none; 
 		color: inherit; 
-	}
-}
-
-.restaurant {
-	overflow: hidden; 
-	border-radius: 15px; 
-	max-width: 380px; 
-	margin: 1em auto; 
-	position: relative; 
-	@include main-box-shadow (0.2); 
-	transition: all ease 460ms; 
-	&:hover {
-		@include main-box-shadow(0.4); 
-	}
-	&__heading {
-		@include page; 
-	}
-	&__img-container {
-		max-height: 140px; 
-		overflow: hidden;
-		display: flex; 
-		justify-content: center; 
-		align-items: center;
-		img {
-			width: 100%; 
-			height: auto; 
-		}
-	}
-	&__new-label {
-		position: absolute; 
-		top: 12px; 
-		right: 12px;
-		background-color: rgb(153, 226, 208, 0.9);
-		color: rgb(19, 146, 115); 
-		font-weight: bold;
-		font-size: 0.85em; 
-		padding: 0.4em 1em; 
-		border-radius: 3px; 
-		@include main-box-shadow(0.2);   
-	}
-	&__bottom {
-		padding: 1em; 
-		display: flex; 
-		justify-content: space-between; 
-		align-items: center; 
-	}
-	&__fav {
-		font-size: 200%; 
-		color: $primary-color; 
-		transition: color ease 650ms; 
-		&:hover {
-			color: $secondary-color; 
-		}
 	}
 }
 

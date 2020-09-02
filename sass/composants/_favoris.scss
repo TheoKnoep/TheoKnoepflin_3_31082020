@@ -1,0 +1,8 @@
+.add-favorite {
+	font-size: 200%; 
+	color: $primary-color; 
+	transition: color ease 650ms; 
+	&:hover {
+		color: $secondary-color; 
+	}
+}
