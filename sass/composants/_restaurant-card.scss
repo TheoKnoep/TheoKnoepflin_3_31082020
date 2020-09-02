@@ -21,6 +21,10 @@
 		img {
 			width: 100%; 
 			height: auto; 
+			transition: all ease 460ms; 
+			&:hover {
+				transform: scale(1.2); 
+			}
 		}
 	}
 	&__new-label {
@@ -40,5 +44,9 @@
 		display: flex; 
 		justify-content: space-between; 
 		align-items: center; 
+	}
+	&__info:hover {
+		text-decoration: underline;  
+		text-decoration-color: $primary-color; 
 	}
 }
