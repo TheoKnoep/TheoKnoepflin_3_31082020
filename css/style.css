@@ -14,12 +14,23 @@
   font-family: "Shrikhand", serif;
 }
 
-.steps {
-  max-width: 720px;
+.heading {
+  max-width: 800px;
   margin: auto;
 }
-.steps h2 {
-  width: 95%;
+@media screen and (min-width: 599px) {
+  .heading {
+    text-align: center;
+  }
+}
+
+.container {
+  padding: 2%;
+  margin: auto;
+}
+
+.steps {
+  max-width: 800px;
   margin: auto;
 }
 .steps ol {
@@ -28,16 +39,26 @@
   margin: auto;
   counter-reset: etape;
 }
+@media screen and (min-width: 599px) {
+  .steps ol {
+    display: flex;
+    max-width: none;
+  }
+}
 .steps ol li {
   background: #F7F7F7;
   border-radius: 15px;
-  width: 85%;
   margin: 1em auto 1em 5%;
-  padding: 1em 0 1em 2em;
+  padding: 1em 0.2em 1em 2em;
   position: relative;
   counter-increment: etape;
   transition: all ease 1s;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 599px) {
+  .steps ol li {
+    padding: 1em 2em;
+  }
 }
 .steps ol li::before {
   content: counter(etape);
@@ -59,9 +80,13 @@
   color: #9356DC;
 }
 .steps ol li i {
-  width: 28px;
   text-align: center;
   transition: all ease 400ms;
+}
+@media screen and (min-width: 599px) {
+  .steps ol li i {
+    text-align: left;
+  }
 }
 
 .restaurant {
@@ -73,11 +98,17 @@
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
   transition: all ease 460ms;
 }
+@media screen and (min-width: 599px) {
+  .restaurant {
+    margin: 1em;
+    width: 40%;
+  }
+}
 .restaurant:hover {
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
 .restaurant__heading {
-  max-width: 720px;
+  max-width: 800px;
   margin: auto;
 }
 .restaurant__img-container {
@@ -193,7 +224,7 @@
   color: white;
 }
 .footer__link-list {
-  max-width: 720px;
+  max-width: 800px;
   margin: auto;
   padding: 1em;
   list-style: none;
@@ -218,7 +249,12 @@
   text-align: center;
 }
 .usp .heading {
-  margin: 1em 0 2em 0;
+  margin: 1em auto 2em auto;
+}
+@media screen and (min-width: 599px) {
+  .usp .heading {
+    font-size: 2.1em;
+  }
 }
 
 .localisation {
@@ -227,7 +263,7 @@
 }
 
 .accroche {
-  max-width: 720px;
+  max-width: 800px;
   margin: auto;
 }
 .accroche__cta {
@@ -239,9 +275,16 @@
 }
 
 .restaurants-container {
-  padding: 2%;
-  margin: auto;
   background-color: #F7F7F7;
+}
+@media screen and (min-width: 599px) {
+  .restaurants-container__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 830px;
+    margin: auto;
+  }
 }
 .restaurants-container a {
   text-decoration: none;

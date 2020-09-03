@@ -1,24 +1,26 @@
 .steps {
 	@include page; 
-	h2 {
-		width: 95%; 
-		margin: auto; 
-	}
 	ol {
 		list-style: none; 
 		max-width: 380px; 
 		margin: auto; 
 		counter-reset: etape; 
+		@include desktop-only {
+			display: flex; 
+			max-width: none; ;
+		}
 		li {
 			background: $soft-gray-bg; 
 			border-radius: 15px; 
-			width: 85%; 
 			margin: 1em auto 1em 5%;  
-			padding: 1em 0 1em 2em; 
+			padding: 1em .2em 1em 2em; 
 			position: relative; 
 			counter-increment: etape; 
 			transition: all ease 1s; 
 			@include main-box-shadow(0.2); 
+			@include desktop-only {
+				padding: 1em 2em; 
+			}
 			&::before {
 				content: counter(etape);  
 				color: white; 
@@ -38,10 +40,12 @@
 			&:hover  i {
 				 color: $primary-color; 
 			}
-			i {
-				width: 28px; 
+			i {			
 				text-align: center; 
 				transition: all ease 400ms; 
+				@include desktop-only {
+					text-align: left; 
+				}
 			}
 		}
 	}
