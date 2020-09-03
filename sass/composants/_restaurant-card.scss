@@ -37,6 +37,7 @@
 		font-size: 0.85em; 
 		padding: 0.4em 1em; 
 		border-radius: 3px; 
+		z-index: 100; 
 		@include main-box-shadow(0.2);   
 	}
 	&__bottom {
