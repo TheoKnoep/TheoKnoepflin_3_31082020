@@ -9,3 +9,59 @@
 		width: 100%; 
 	}
 }
+
+.restaurant-heading {
+	display: flex; 
+	justify-content: space-between;
+}
+
+.menu-container {
+	border-radius: 25px 25px 0 0; 
+	background: $soft-gray-bg;
+	padding: 0.6em 1em; 
+	position: relative; 
+	bottom: 24px; 
+	margin-bottom: -24px; 
+	h1 {
+		font-size: 1.4rem; 
+	}
+	h2 {
+		text-transform: uppercase;
+		font-weight: 300; 
+		font-size: 1.2rem; 
+		&::after {
+			content: ''; 
+			width: 42px; 
+			height: 2px; 
+			background: $tertiary-color; 
+			display: block; 
+		}
+	}
+}
+.dish-container {
+	margin-bottom: 2em; 
+}
+
+.dish-item {
+	background: white; 
+	border-radius: 12px; 
+	padding: .4em; 
+	margin: .8em 0; 
+	display: flex; 
+	justify-content: space-between;
+	align-items: flex-end; 
+	&__name { 
+		text-overflow: ellipsis; 
+		overflow: hidden; 
+		white-space: nowrap;
+		width: 100%; 
+	}
+	@include main-box-shadow(0.2); 
+	:nth-child(2) {
+		font-size: $small-font; 
+	}
+	.dish-price {
+		font-weight: bold; 
+		margin-left: 12px; 
+	}
+}

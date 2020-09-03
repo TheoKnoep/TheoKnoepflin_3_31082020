@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+.main-heading {
+  font-family: "Shrikhand", serif;
+}
+
 .steps {
   max-width: 720px;
   margin: auto;
@@ -254,6 +258,63 @@
 }
 .heading-img img {
   width: 100%;
+}
+
+.restaurant-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-container {
+  border-radius: 25px 25px 0 0;
+  background: #F7F7F7;
+  padding: 0.6em 1em;
+  position: relative;
+  bottom: 24px;
+  margin-bottom: -24px;
+}
+.menu-container h1 {
+  font-size: 1.4rem;
+}
+.menu-container h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.menu-container h2::after {
+  content: "";
+  width: 42px;
+  height: 2px;
+  background: #99E2D0;
+  display: block;
+}
+
+.dish-container {
+  margin-bottom: 2em;
+}
+
+.dish-item {
+  background: white;
+  border-radius: 12px;
+  padding: 0.4em;
+  margin: 0.8em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
+}
+.dish-item__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.dish-item :nth-child(2) {
+  font-size: 0.8em;
+}
+.dish-item .dish-price {
+  font-weight: bold;
+  margin-left: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
