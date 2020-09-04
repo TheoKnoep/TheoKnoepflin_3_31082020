@@ -107,6 +107,9 @@
 .restaurant:hover {
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
+.restaurant:hover img {
+  transform: scale(1.15);
+}
 .restaurant__heading {
   max-width: 800px;
   margin: auto;
@@ -121,10 +124,7 @@
 .restaurant__img-container img {
   width: 100%;
   height: auto;
-  transition: all ease 460ms;
-}
-.restaurant__img-container img:hover {
-  transform: scale(1.2);
+  transition: all ease 450ms;
 }
 .restaurant__new-label {
   position: absolute;
@@ -195,17 +195,84 @@
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.4);
 }
 
+@keyframes shakebutton {
+  25% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+}
 .back-btn {
   position: absolute;
   left: 12px;
   font-size: 1.8rem;
-  transition: all ease 450ms;
+  /* transition: all ease 450ms; */
 }
 .back-btn:hover {
-  left: 6px;
+  animation: shakebutton 650ms linear infinite;
 }
 .back-btn a {
   color: black;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes exit-loader {
+  100% {
+    opacity: 0;
+    /* transform: translateY(100%) scale(0);  */
+  }
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  opacity: 1;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: exit-loader;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+.load {
+  width: 10vh;
+  height: 7vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.load__bar {
+  background-color: #9356DC;
+  height: 100%;
+  width: 1vh;
+  border-radius: 50px;
+  animation: bars 600ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 120ms;
+}
+.load__bar--2 {
+  animation-delay: 240ms;
+}
+.load__bar--3 {
+  animation-delay: 360ms;
+}
+.load__bar--4 {
+  animation-delay: 480ms;
+}
+.load__bar--5 {
+  animation-delay: 600ms;
 }
 
 .header {

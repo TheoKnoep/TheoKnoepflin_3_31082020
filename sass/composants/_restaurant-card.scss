@@ -13,6 +13,9 @@
 	&:hover {
 		@include main-box-shadow(0.4); 
 	}
+	&:hover img {
+		transform: scale(1.15); 
+	}
 	&__heading {
 		@include page; 
 	}
@@ -25,10 +28,8 @@
 		img {
 			width: 100%; 
 			height: auto; 
-			transition: all ease 460ms; 
-			&:hover {
-				transform: scale(1.2); 
-			}
+			transition: all ease 450ms; 
+			
 		}
 	}
 	&__new-label {

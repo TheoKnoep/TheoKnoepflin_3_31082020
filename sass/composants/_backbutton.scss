@@ -1,12 +1,22 @@
+$shake-length: 6px; 
+$shake-dur: 650ms; 
 
+@keyframes shakebutton {
+	25% {
+		transform: translateX($shake-length); 
+	}
+	75% {
+		transform: translateX(-$shake-length)
+	}
+}
 
 .back-btn {
 	position: absolute; 
 	left: 12px;  
 	font-size: 1.8rem; 
-	transition: all ease 450ms; 
+	/* transition: all ease 450ms; */
 	&:hover {
-		left:6px; 
+		animation: shakebutton $shake-dur linear infinite; 
 	}
 	a {
 		color: black; 
