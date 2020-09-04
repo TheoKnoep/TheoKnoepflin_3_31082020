@@ -323,6 +323,8 @@
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.2rem;
+  max-width: 560px;
+  margin: auto;
 }
 .menu-container h2::after {
   content: "";
@@ -340,17 +342,22 @@
   background: white;
   border-radius: 12px;
   padding: 0.4em;
-  margin: 0.8em 0;
+  max-width: 560px;
+  margin: 0.8em auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
-.dish-item__name {
+@media screen and (min-width: 599px) {
+  .dish-item {
+    padding: 1.2em;
+  }
+}
+.dish-item__name h3, .dish-item__name p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
 }
 .dish-item :nth-child(2) {
   font-size: 0.8em;
