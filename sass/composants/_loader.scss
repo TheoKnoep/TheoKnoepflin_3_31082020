@@ -15,7 +15,7 @@ $anim-delay: $anim-dur / $num-bars;
 @keyframes exit-loader {
 	100% {
 		opacity: 0; 
-		/* transform: translateY(100%) scale(0);  */
+		transform: translateY(100%) scale(0);  
 	}
 }
 
@@ -31,8 +31,8 @@ $anim-delay: $anim-dur / $num-bars;
 	justify-content: center; 
 	align-items: center; 
 	animation: exit-loader;
-	animation-duration: 1s;
-	animation-delay: 3s;
+	animation-duration: 650ms;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 }
 

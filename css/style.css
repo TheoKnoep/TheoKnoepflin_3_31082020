@@ -227,7 +227,7 @@
 @keyframes exit-loader {
   100% {
     opacity: 0;
-    /* transform: translateY(100%) scale(0);  */
+    transform: translateY(100%) scale(0);
   }
 }
 .loader {
@@ -241,8 +241,8 @@
   justify-content: center;
   align-items: center;
   animation: exit-loader;
-  animation-duration: 1s;
-  animation-delay: 3s;
+  animation-duration: 650ms;
+  animation-delay: 2s;
   animation-fill-mode: both;
 }
 
@@ -273,6 +273,52 @@
 }
 .load__bar--5 {
   animation-delay: 600ms;
+}
+
+@keyframes progressive-apparition {
+  0% {
+    opacity: 0;
+    transform: translateX(280px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.progressive-apparition {
+  animation: progressive-apparition;
+  animation-duration: 650ms;
+  animation-fill-mode: both;
+}
+.progressive-apparition--1 {
+  animation-delay: 50ms;
+}
+.progressive-apparition--2 {
+  animation-delay: 100ms;
+}
+.progressive-apparition--3 {
+  animation-delay: 150ms;
+}
+.progressive-apparition--4 {
+  animation-delay: 200ms;
+}
+.progressive-apparition--5 {
+  animation-delay: 250ms;
+}
+.progressive-apparition--6 {
+  animation-delay: 300ms;
+}
+.progressive-apparition--7 {
+  animation-delay: 350ms;
+}
+.progressive-apparition--8 {
+  animation-delay: 400ms;
+}
+.progressive-apparition--9 {
+  animation-delay: 450ms;
 }
 
 .header {
@@ -382,6 +428,7 @@
   position: relative;
   bottom: 24px;
   margin-bottom: -24px;
+  overflow: hidden;
 }
 .menu-container h1 {
   font-size: 1.4rem;
