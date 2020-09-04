@@ -339,32 +339,64 @@
 }
 
 .dish-item {
+  cursor: pointer;
   background: white;
   border-radius: 12px;
-  padding: 0.4em;
   max-width: 560px;
+  max-height: 52px;
   margin: 0.8em auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  overflow: hidden;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 599px) {
   .dish-item {
-    padding: 1.2em;
+    max-height: 76px;
   }
+}
+.dish-item__name {
+  max-width: 70%;
 }
 .dish-item__name h3, .dish-item__name p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+.dish-item__name h3 {
+  font-size: 1em;
+}
+.dish-item__content {
+  padding: 0.4rem;
+}
+@media screen and (min-width: 599px) {
+  .dish-item__content {
+    padding: 1.2rem;
+  }
+}
 .dish-item :nth-child(2) {
   font-size: 0.8em;
 }
 .dish-item .dish-price {
   font-weight: bold;
-  margin-left: 12px;
+  margin-left: auto;
+}
+.dish-item:hover .dish-selector {
+  transform: translateX(0);
+  margin-left: 2px;
+}
+.dish-item .dish-selector {
+  background: #99E2D0;
+  color: white;
+  padding: 1em;
+  height: 80px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  transform: translateX(48px);
+  margin-left: -46px;
+  transition: all ease 450ms;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -45,22 +45,34 @@
 }
 
 .dish-item {
+	cursor: pointer;
 	background: white; 
 	border-radius: 12px; 
-	padding: .4em; 
-	@include desktop-only {
-		padding: 1.2em; 
-	}
 	max-width: 560px; 
+	max-height: 52px;
+	@include desktop-only {
+		max-height: 76px; 
+	}
 	margin: .8em auto; 
 	display: flex; 
 	justify-content: space-between;
 	align-items: flex-end; 
+	overflow: hidden; 
 	&__name { 
+		max-width: 70%; 
 		h3, p {
 			text-overflow: ellipsis; 
 			overflow: hidden; 
 			white-space: nowrap;
+		}
+		h3 {
+			font-size: 1em; 
+		}
+	}
+	&__content {
+		padding: .4rem; 
+		@include desktop-only {
+			padding: 1.2rem; 
 		}
 	}
 	@include main-box-shadow(0.2); 
@@ -69,6 +81,22 @@
 	}
 	.dish-price {
 		font-weight: bold; 
-		margin-left: 12px; 
+		margin-left: auto; 
+	}
+	&:hover .dish-selector {
+		transform: translateX(0);
+		margin-left: 2px; 
+	}
+	.dish-selector { 
+		background: $tertiary-color; 
+		color: white; 
+		padding: 1em; 
+		height: 80px;
+		align-self: center; 
+		display: flex; 
+		align-items: center; 
+		transform: translateX(48px);
+		margin-left: -46px;
+		transition: all ease 450ms;
 	}
 }
