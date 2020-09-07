@@ -351,6 +351,21 @@
 .footer a {
   text-decoration: none;
   color: white;
+  display: inline-block;
+  overflow: hidden;
+}
+.footer a:hover::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+.footer a::after {
+  content: "";
+  border-bottom: solid 2px #9356DC;
+  display: block;
+  height: 2px;
+  transform: translateX(-100%);
+  opacity: 0.4;
+  transition: all ease 350ms;
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
