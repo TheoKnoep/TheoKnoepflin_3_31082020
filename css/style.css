@@ -511,10 +511,6 @@
   font-weight: bold;
   margin-left: auto;
 }
-.dish-item:hover .dish-selector {
-  transform: translateX(0);
-  margin-left: 2px;
-}
 .dish-item .dish-selector {
   background: #99E2D0;
   color: white;
@@ -526,6 +522,17 @@
   transform: translateX(48px);
   margin-left: -46px;
   transition: all ease 450ms;
+}
+.dish-item:hover .dish-selector {
+  transform: translateX(0);
+  margin-left: 2px;
+}
+.dish-item .fa-check-circle {
+  transform: rotate(0);
+  transition: all ease 450ms;
+}
+.dish-item:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

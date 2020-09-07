@@ -84,10 +84,7 @@
 		font-weight: bold; 
 		margin-left: auto; 
 	}
-	&:hover .dish-selector {
-		transform: translateX(0);
-		margin-left: 2px; 
-	}
+	
 	.dish-selector { 
 		background: $tertiary-color; 
 		color: white; 
@@ -99,5 +96,16 @@
 		transform: translateX(48px);
 		margin-left: -46px;
 		transition: all ease 450ms;
+	}
+	&:hover .dish-selector {
+		transform: translateX(0);
+		margin-left: 2px; 
+	}
+	.fa-check-circle {
+		transform: rotate(0); 
+		transition: all ease 450ms;
+	}
+	&:hover .fa-check-circle { 
+		transform: rotate(360deg)
 	}
 }
