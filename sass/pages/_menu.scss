@@ -48,7 +48,6 @@
 .dish-item {
 	cursor: pointer;
 	background: white; 
-	border-radius: 12px; 
 	max-width: 560px; 
 	max-height: 52px;
 	@include desktop-only {

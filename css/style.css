@@ -29,6 +29,10 @@
   margin: auto;
 }
 
+.rounded-box {
+  border-radius: 15px;
+}
+
 .steps {
   max-width: 800px;
   margin: auto;
@@ -47,7 +51,6 @@
 }
 .steps ol li {
   background: #F7F7F7;
-  border-radius: 15px;
   margin: 1em auto 1em 5%;
   padding: 1em 0.2em 1em 2em;
   position: relative;
@@ -91,7 +94,6 @@
 
 .restaurant {
   overflow: hidden;
-  border-radius: 15px;
   max-width: 380px;
   margin: 1em auto;
   position: relative;
@@ -470,7 +472,6 @@
 .dish-item {
   cursor: pointer;
   background: white;
-  border-radius: 12px;
   max-width: 560px;
   max-height: 52px;
   margin: 0.8em auto;
