@@ -159,13 +159,21 @@
   height: 40px;
   color: #9356DC;
   transition: all ease 650ms;
-  overflow: hidden;
-  mask-image: url("heart-bis.png");
-  mask-size: 40px 40px;
-  -webkit-mask-image: url("heart-bis.png");
-  -webkit-mask-size: 40px 40px;
 }
-.add-favorite::after {
+.add-favorite .fa-heart {
+  position: absolute;
+}
+.add-favorite .far {
+  z-index: 3;
+}
+.add-favorite .fas {
+  color: transparent;
+  z-index: 2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+.add-favorite .fas::after {
   content: "";
   display: block;
   width: 48px;
@@ -174,12 +182,30 @@
   background: linear-gradient(#FF79DA, #9356DC);
   position: absolute;
   transition: all ease 450ms;
-  transform: translate(-4px, 10px);
+  transform: translate(0, 0);
 }
-.add-favorite:hover::after {
-  transform: translate(-4px, -48px);
+.add-favorite .fas:hover::after {
+  transform: translateX(0, -100%);
 }
 
+/*
+&::after {
+		content: ''; 
+		display:block; 
+		width: 48px; 
+		height: 48px; 
+		border-radius: 50%; 
+		background: linear-gradient($secondary-color, $primary-color); 
+		position: absolute; 
+		transition: all ease 450ms; 
+		transform: translate(-4px, 10px); 
+	}
+	&:hover {
+		&::after {
+			transform: translate(-4px, -48px); 
+		}
+	} 
+*/
 .btn-cta {
   color: white;
   text-decoration: none;

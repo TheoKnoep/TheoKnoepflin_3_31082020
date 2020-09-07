@@ -5,13 +5,42 @@
 	height: 40px; 
 	color: $primary-color; 
 	transition: all ease 650ms; 
-	overflow: hidden; 
-	mask-image: url('heart-bis.png'); 
-	mask-size: 40px 40px; 
-	-webkit-mask-image: url('heart-bis.png'); 
-	-webkit-mask-size: 40px 40px; 
+	
+	.fa-heart {
+		position: absolute;
+	}
+	.far {
+		z-index: 3; 
+	}
+	.fas {
+		color: transparent; 
+		z-index: 2; 
+		background-clip: text;
+		-webkit-background-clip: text; 
+		background-size: cover; 
+		&::after {
+			content: ''; 
+			display:block; 
+			width: 48px; 
+			height: 48px; 
+			border-radius: 50%; 
+			background: linear-gradient($secondary-color, $primary-color); 
+			position: absolute; 
+			transition: all ease 450ms; 
+			transform: translate(0, 0); 
+		}
+		&:hover {
+			&::after {
+				transform: translateX(0, -100%); 
+			}
+		}
+	}
 
-	&::after {
+	
+}
+
+/*
+&::after {
 		content: ''; 
 		display:block; 
 		width: 48px; 
@@ -27,4 +56,4 @@
 			transform: translate(-4px, -48px); 
 		}
 	} 
-}
+*/
