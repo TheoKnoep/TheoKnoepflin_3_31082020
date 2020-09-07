@@ -1,5 +1,6 @@
 $apparition-items: 9; 
-$anim-delay: 50ms;
+$anim-delay-initial: 600ms; 
+$anim-delay: 100ms;
 
 @keyframes progressive-apparition {
 	0% {
@@ -21,7 +22,7 @@ $anim-delay: 50ms;
 	animation-fill-mode: both;
 	@for $i from 1 through $apparition-items {
 		&--#{$i} {
-			animation-delay: $anim-delay*$i; 
+			animation-delay: $anim-delay-initial + $anim-delay*$i; 
 		}
 	} 
 }
