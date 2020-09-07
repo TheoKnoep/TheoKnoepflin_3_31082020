@@ -59,8 +59,10 @@
 	justify-content: space-between;
 	align-items: flex-end; 
 	overflow: hidden; 
+	@include dish-selector-transition; 
 	&__name { 
-		max-width: 70%; 
+		width: $dish-name-width; 
+		@include dish-selector-transition; 
 		h3, p {
 			text-overflow: ellipsis; 
 			overflow: hidden; 
@@ -69,6 +71,9 @@
 		h3 {
 			font-size: 1em; 
 		}
+	}
+	&:hover &__name {
+		width: calc(80% - 48px); 
 	}
 	&__content {
 		padding: .4rem; 
@@ -95,7 +100,7 @@
 		align-items: center; 
 		transform: translateX(48px);
 		margin-left: -46px;
-		transition: all ease 450ms;
+		@include dish-selector-transition; 
 	}
 	&:hover .dish-selector {
 		transform: translateX(0);
@@ -103,7 +108,7 @@
 	}
 	.fa-check-circle {
 		transform: rotate(0); 
-		transition: all ease 450ms;
+		@include dish-selector-transition; 
 	}
 	&:hover .fa-check-circle { 
 		transform: rotate(360deg)

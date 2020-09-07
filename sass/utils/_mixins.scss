@@ -17,3 +17,7 @@
 @mixin grayer-bg {
 	background-color: darken($soft-gray-bg, 10%); 
 }
+
+@mixin dish-selector-transition {
+	transition: all ease 450ms;
+}

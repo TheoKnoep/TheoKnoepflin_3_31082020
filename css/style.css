@@ -478,6 +478,7 @@
   justify-content: space-between;
   align-items: flex-end;
   overflow: hidden;
+  transition: all ease 450ms;
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 599px) {
@@ -486,7 +487,8 @@
   }
 }
 .dish-item__name {
-  max-width: 70%;
+  width: 80%;
+  transition: all ease 450ms;
 }
 .dish-item__name h3, .dish-item__name p {
   text-overflow: ellipsis;
@@ -495,6 +497,9 @@
 }
 .dish-item__name h3 {
   font-size: 1em;
+}
+.dish-item:hover .dish-item__name {
+  width: calc(80% - 48px);
 }
 .dish-item__content {
   padding: 0.4rem;
