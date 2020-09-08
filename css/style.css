@@ -154,9 +154,8 @@
 
 .add-favorite {
   font-size: 200%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   color: #9356DC;
   transition: all ease 650ms;
 }
@@ -173,19 +172,26 @@
   -webkit-background-clip: text;
   background-size: cover;
 }
+.add-favorite .fas:hover::after {
+  transform: translate(0, 0);
+}
 .add-favorite .fas::after {
   content: "";
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: linear-gradient(#FF79DA, #9356DC);
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   transition: all ease 450ms;
-  transform: translate(0, 0);
+  transform: translate(0, 32px);
 }
-.add-favorite .fas:hover::after {
-  transform: translateX(0, -100%);
+.add-favorite .fas::after:hover {
+  transform: translate(0, 0);
 }
 
 /*
@@ -306,14 +312,14 @@
 @keyframes progressive-apparition {
   0% {
     opacity: 0;
-    transform: translateX(280px);
+    transform: translateY(80px);
   }
   75% {
     opacity: 0.5;
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .progressive-apparition {

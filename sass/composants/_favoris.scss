@@ -1,8 +1,9 @@
+$favorite-size: 32px; 
+
 .add-favorite {
 	font-size: 200%; 
-	text-align: center; 
-	width: 40px; 
-	height: 40px; 
+	width: $favorite-size; 
+	height: $favorite-size; 
 	color: $primary-color; 
 	transition: all ease 650ms; 
 	
@@ -13,27 +14,35 @@
 		z-index: 3; 
 	}
 	.fas {
-		color: transparent; 
+		color: transparent;  
 		z-index: 2; 
 		background-clip: text;
 		-webkit-background-clip: text; 
 		background-size: cover; 
+		&:hover {
+			&::after {
+				transform: translate(0, 0); 
+			}
+		}
 		&::after {
 			content: ''; 
 			display:block; 
-			width: 48px; 
-			height: 48px; 
+			width: $favorite-size; 
+			height: $favorite-size; 
 			border-radius: 50%; 
 			background: linear-gradient($secondary-color, $primary-color); 
 			position: absolute; 
+			top: 0; 
+			right: 0; 
+			bottom: 0; 
+			left: 0; 
 			transition: all ease 450ms; 
-			transform: translate(0, 0); 
-		}
-		&:hover {
-			&::after {
-				transform: translateX(0, -100%); 
+			transform: translate(0, $favorite-size); 
+			&:hover {
+				transform: translate(0, 0); 
 			}
 		}
+		
 	}
 
 	
