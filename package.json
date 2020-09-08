@@ -4,7 +4,8 @@
   "description": "Projet 3 du parcours développeur web OpenClassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,12 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/TheoKnoep/TheoKnoepflin_3_31082020/issues"
   },
-  "homepage": "https://github.com/TheoKnoep/TheoKnoepflin_3_31082020#readme"
+  "homepage": "https://github.com/TheoKnoep/TheoKnoepflin_3_31082020#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6"
+  }
 }
