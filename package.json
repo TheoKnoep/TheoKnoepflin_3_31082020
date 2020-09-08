@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours développeur web OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoKnoep/TheoKnoepflin_3_31082020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheoKnoep/TheoKnoepflin_3_31082020/issues"
+  },
+  "homepage": "https://github.com/TheoKnoep/TheoKnoepflin_3_31082020#readme"
+}
