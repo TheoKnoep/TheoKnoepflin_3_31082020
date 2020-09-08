@@ -280,14 +280,14 @@
 @keyframes progressive-apparition {
   0% {
     opacity: 0;
-    transform: translateX(280px);
+    transform: translateY(80px);
   }
   75% {
     opacity: 0.5;
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .progressive-apparition {
