@@ -15,10 +15,11 @@ $favorite-size: 32px;
 	}
 	.fas {
 		color: transparent;  
-		z-index: 2; 
+		z-index: 4; 
 		background-clip: text;
 		-webkit-background-clip: text; 
 		background-size: cover; 
+		overflow: hidden; 
 		&:hover {
 			&::after {
 				transform: translate(0, 0); 
