@@ -35,8 +35,8 @@
 		position: absolute; 
 		top: 12px; 
 		right: 12px;
-		background-color: rgb(153, 226, 208, 0.9);
-		color: rgb(19, 146, 115); 
+		background-color: $tertiary-color;
+		color: darken($tertiary-color, 40%); 
 		font-weight: bold;
 		font-size: 0.85em; 
 		padding: 0.4em 1em; 
