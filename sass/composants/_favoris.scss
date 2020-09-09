@@ -17,7 +17,7 @@ $favorite-size: 32px;
 		height: $favorite-size; 
 		@include gray-bg;  
 		z-index: 4; 
-		transition: height 450ms cubic-bezier(0,.8,.14,.99); 
+		transition: height 950ms cubic-bezier(0,.8,.14,.99); 
 	}
 	.fas {
 		color: transparent;  
