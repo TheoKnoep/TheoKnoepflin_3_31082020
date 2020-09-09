@@ -1,6 +1,6 @@
 .steps {
 	@include page; 
-	ol {
+	.steps-content {
 		list-style: none; 
 		max-width: 380px; 
 		margin: auto; 
@@ -9,13 +9,15 @@
 			display: flex; 
 			max-width: none; ;
 		}
-		li {
+		&__item {
 			background: $soft-gray-bg; 
 			margin: 1em auto 1em 5%;  
 			padding: 1em .2em 1em 2em; 
 			position: relative; 
 			counter-increment: etape; 
 			transition: all ease 1s; 
+			display: flex; 
+			align-items: center;
 			@include main-box-shadow(0.2); 
 			@include desktop-only {
 				padding: 1em 2em; 
@@ -32,11 +34,12 @@
 				align-items: center;
 				position: absolute; 
 				left: -12px; 
+				top: calc(50% - 12px); 
 			}
 			&:hover {
 				background: lighten($primary-color, 30%); 
 			}
-			&:hover  i {
+			&:hover  .step-icone {
 				 color: $primary-color; 
 			}
 			i {			
@@ -47,5 +50,15 @@
 				}
 			}
 		}
+	}
+}
+
+.step-icone {
+	width: 32px; 
+	@include desktop-only {
+		width: 48px; 
+		font-size: 1.6em; 
+		text-align: center;
+		margin-left: -0.9em; 
 	}
 }
