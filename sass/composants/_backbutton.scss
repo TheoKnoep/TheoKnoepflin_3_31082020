@@ -16,7 +16,7 @@ $shake-dur: 650ms;
 	font-size: 1.8rem; 
 	/* transition: all ease 450ms; */
 	&:hover {
-		animation: shakebutton $shake-dur linear infinite; 
+		animation: shakebutton $shake-dur ease-in-out infinite; 
 	}
 	a {
 		color: black; 

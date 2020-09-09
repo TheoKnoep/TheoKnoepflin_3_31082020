@@ -4,10 +4,13 @@ $favorite-size: 32px;
 	font-size: 200%; 
 	width: $favorite-size; 
 	height: $favorite-size; 
-	color: $primary-color; 
 	transition: all ease 650ms; 
+	color: $like-color; 
 	&:hover .far {
 		height: 0; 
+		color: $primary-color; 
+		opacity: 0; 
+		cursor: pointer; 
 	}
 	
 	.fa-heart {
@@ -15,9 +18,10 @@ $favorite-size: 32px;
 	}
 	.far {
 		height: $favorite-size; 
+		opacity: 1; 
 		@include gray-bg;  
 		z-index: 4; 
-		transition: height 950ms cubic-bezier(0,.8,.14,.99); 
+		transition: all 950ms cubic-bezier(0,.8,.14,.99); 
 	}
 	.fas {
 		color: transparent;  

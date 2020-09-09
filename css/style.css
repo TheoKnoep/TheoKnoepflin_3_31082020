@@ -171,20 +171,24 @@
   font-size: 200%;
   width: 32px;
   height: 32px;
-  color: #9356DC;
   transition: all ease 650ms;
+  color: #999;
 }
 .add-favorite:hover .far {
   height: 0;
+  color: #9356DC;
+  opacity: 0;
+  cursor: pointer;
 }
 .add-favorite .fa-heart {
   position: absolute;
 }
 .add-favorite .far {
   height: 32px;
+  opacity: 1;
   background-color: #F7F7F7;
   z-index: 4;
-  transition: height 950ms cubic-bezier(0, 0.8, 0.14, 0.99);
+  transition: all 950ms cubic-bezier(0, 0.8, 0.14, 0.99);
 }
 .add-favorite .fas {
   color: transparent;
@@ -226,7 +230,7 @@
   /* transition: all ease 450ms; */
 }
 .back-btn:hover {
-  animation: shakebutton 650ms linear infinite;
+  animation: shakebutton 650ms ease-in-out infinite;
 }
 .back-btn a {
   color: black;
