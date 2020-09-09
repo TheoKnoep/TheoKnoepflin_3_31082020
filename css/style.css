@@ -340,6 +340,9 @@
 .progressive-apparition--9 {
   animation-delay: 1500ms;
 }
+.progressive-apparition--10 {
+  animation-delay: 1600ms;
+}
 
 .header {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
