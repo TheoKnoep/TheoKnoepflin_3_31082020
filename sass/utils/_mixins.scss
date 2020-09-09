@@ -3,6 +3,11 @@
 	margin: auto; 
 }
 
+@mixin menu-page {
+	max-width: 560px; 
+	margin: auto; 
+}
+
 @mixin logo-font {
 	font-family: 'Shrikhand', cursive;
 }
