@@ -17,6 +17,9 @@
 @mixin grayer-bg {
 	background-color: darken($soft-gray-bg, 10%); 
 }
+@mixin gradient-bg {
+	background: linear-gradient($secondary-color, $primary-color); 
+}
 
 @mixin dish-selector-transition {
 	transition: all ease 450ms;
