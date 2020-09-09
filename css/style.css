@@ -51,8 +51,8 @@
 }
 .steps .steps-content__item {
   background: #F7F7F7;
-  margin: 1em auto 1em 5%;
-  padding: 1em 0.2em 1em 2em;
+  margin: 1.2em auto 1.2em 5%;
+  padding: 1.6em 0.2em 1.6em 2em;
   position: relative;
   counter-increment: etape;
   transition: all ease 1s;
@@ -168,7 +168,7 @@
 }
 
 .add-favorite {
-  font-size: 200%;
+  font-size: 160%;
   width: 32px;
   height: 32px;
   transition: all ease 650ms;
@@ -192,7 +192,7 @@
 }
 .add-favorite .fas {
   color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(45deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   z-index: 3;
@@ -207,7 +207,7 @@
   font-weight: bold;
   transition: all ease 300ms;
   opacity: 1;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
   box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.2);
 }
 .btn-cta:hover {

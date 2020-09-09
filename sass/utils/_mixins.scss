@@ -22,8 +22,8 @@
 @mixin grayer-bg {
 	background-color: darken($soft-gray-bg, 10%); 
 }
-@mixin gradient-bg {
-	background: linear-gradient($secondary-color, $primary-color); 
+@mixin gradient-bg ($orientation: 45deg) {
+	background: linear-gradient($orientation, $secondary-color, $primary-color); 
 }
 
 @mixin dish-selector-transition {

@@ -7,7 +7,7 @@
 	font-weight: bold; 
 	transition: all ease 300ms; 
 	opacity: 1; 
-	@include gradient-bg; 
+	@include gradient-bg(165deg); 
 	@include main-box-shadow(0.2); 
 	&:hover {
 		opacity: 0.7;  
