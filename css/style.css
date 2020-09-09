@@ -502,6 +502,11 @@
 .dish-item__name h3 {
   font-size: 1em;
 }
+@media screen and (min-width: 599px) {
+  .dish-item__name h3 {
+    font-size: 1.2em;
+  }
+}
 .dish-item:hover .dish-item__name {
   width: calc(82% - 48px);
 }
@@ -515,6 +520,11 @@
 }
 .dish-item :nth-child(2) {
   font-size: 0.8em;
+}
+@media screen and (min-width: 599px) {
+  .dish-item :nth-child(2) {
+    font-size: 1em;
+  }
 }
 .dish-item .dish-price {
   font-weight: bold;
