@@ -99,12 +99,13 @@
 	.dish-selector { 
 		background: $tertiary-color; 
 		color: white; 
-		padding: 1em; 
+		font-size: 1.2em; 
+		padding: 0.8em; 
 		height: 80px;
 		align-self: center; 
 		display: flex; 
 		align-items: center; 
-		transform: translateX(48px);
+		transform: translateX(52px);
 		margin-left: -46px;
 		@include dish-selector-transition; 
 	}
