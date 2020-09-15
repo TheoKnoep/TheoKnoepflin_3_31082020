@@ -101,7 +101,7 @@
 @media screen and (min-width: 599px) {
   .step-icone {
     width: 48px;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-align: center;
     margin-left: -0.9em;
   }
@@ -457,6 +457,7 @@
 .restaurant-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 560px;
   margin: auto;
 }
@@ -472,6 +473,11 @@
 }
 .menu-container h1 {
   font-size: 1.4rem;
+}
+@media screen and (min-width: 599px) {
+  .menu-container h1 {
+    font-size: 2.4em;
+  }
 }
 .menu-container h2 {
   text-transform: uppercase;

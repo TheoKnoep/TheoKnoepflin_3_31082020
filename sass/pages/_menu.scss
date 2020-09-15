@@ -13,6 +13,7 @@
 .restaurant-heading {
 	display: flex; 
 	justify-content: space-between;
+	align-items: center;
 	@include menu-page; 
 }
 
@@ -26,6 +27,9 @@
 	overflow: hidden;
 	h1 {
 		font-size: 1.4rem; 
+		@include desktop-only {
+			font-size: 2.4em; 
+		}
 	}
 	h2 {
 		text-transform: uppercase;
