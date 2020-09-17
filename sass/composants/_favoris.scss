@@ -26,7 +26,6 @@ $favorite-size: 32px;
 	.fas {
 		color: transparent;  
 		@include gradient-bg(45deg); 
-		background-clip: text;
 		-webkit-background-clip: text; 	
 		z-index: 3; 
 	}
